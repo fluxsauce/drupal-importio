@@ -34,30 +34,16 @@ function school_ratings_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-    'api_score' => 'api_score',
-    'class_sizes' => 'class_sizes',
     'location' => 'location',
-    'parent_education' => 'parent_education',
+    'api_score' => 'api_score',
     'state_rank' => 'state_rank',
+    'parent_education' => 'parent_education',
+    'class_sizes' => 'class_sizes',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
       'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'api_score' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'class_sizes' => array(
-      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -70,7 +56,7 @@ function school_ratings_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'parent_education' => array(
+    'api_score' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -79,6 +65,20 @@ function school_ratings_views_default_views() {
     ),
     'state_rank' => array(
       'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'parent_education' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'class_sizes' => array(
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -122,11 +122,10 @@ function school_ratings_views_default_views() {
   $handler->display->display_options['fields']['class_sizes']['id'] = 'class_sizes';
   $handler->display->display_options['fields']['class_sizes']['table'] = 'field_data_class_sizes';
   $handler->display->display_options['fields']['class_sizes']['field'] = 'class_sizes';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
