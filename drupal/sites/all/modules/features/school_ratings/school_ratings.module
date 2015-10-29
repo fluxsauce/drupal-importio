@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the School Ratings feature.
+ */
+
+include_once 'school_ratings.features.inc';
