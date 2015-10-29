@@ -1,5 +1,12 @@
 .DS_Store
+.sass-cache
+.svn
 .vagrant/
 config.yml
+css/reveal.min.css
 drupal.make.yml
 drupal/sites/default/files/
+js/reveal.min.js
+log/*.log
+node_modules/
+tmp/**

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Integrating import.io with Drupal</title>
+
+		<meta name="description" content="Bring import.io datasets into Drupal with Feeds">
+		<meta name="author" content="Jon Peck">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Integrating import.io with Drupal</h1>
+					<h3>Bring import.io datasets into Drupal with Feeds</h3>
+					<p>
+						<small>Created by <a href="https://about.me/jonpeck">Jon Peck</a> / <a href="https://twitter.com/fluxsauce">@fluxsauce</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Jon Peck</h2>
+					<div>
+						<img src="/img/yes-this-is-dog.gif"/>
+					</div>
+					<p>
+						Senior Engineer at <a href="https://fourkitchens.com/">FourKitchens.com</a>
+						<br/><a href="https://twitter.com/fluxsauce">@fluxsauce</a>
+						<br/><a href="https://github.com/fluxsauce">github.com/fluxsauce</a>
+						<br/><a href="https://drupal.org/u/fluxsauce">drupal.org/u/fluxsauce</a>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is this "Drupal"?</h2>
+						<h3><a href="https://drupal.org">drupal.org</a></h3>
+						<p class="fragment">free and open-source</p>
+						<p class="fragment">content-management framework</p>
+						<p class="fragment">written in PHP</p>
+					</section>
+					<section>
+						<h2>Who uses Drupal?</h2>
+						<div class="fragment">
+							<h3>Lots of people. See <a href="https://www.drupal.com/">drupal.com</a></h3>
+							<div>
+								<img src="/img/DrupalUsers.jpg"/>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Is Drupal webscale?</h2>
+						<div class="fragment">
+							<h3>Yes.</h3>
+							<div>
+								<img src="/img/web_scale2.jpg"/>
+							</div>
+						</div>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

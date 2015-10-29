@@ -1,4 +1,15 @@
-# Drupal Import.IO
+# Integrating import.io with Drupal
+
+By Jon Peck, jpeck@fluxsauce.com
+
+## Local presentation
+
+```bash
+npm install
+grunt serve
+```
+
+Visit http://localhost:8000 to view.
 
 ## Try it yourself!
 
