@@ -49,7 +49,7 @@ function school_ratings_feeds_importer_default() {
           2 => array(
             'source' => 'value_1',
             'target' => 'title',
-            'unique' => FALSE,
+            'unique' => 1,
           ),
           3 => array(
             'source' => 'content',

@@ -14,13 +14,8 @@ local_path: ~/projects/drupal_importio
 
 Once all the requirements are fulfilled:
 
-```
+```bash
 vagrant up
-drush cc drush
-drush @drupal-importio.drupal-importio.dev -y en feeds_import_io feeds_ui admin_menu_toolbar admin_views views_ui feeds_tamper_ui features feedspreview
-drush @drupal-importio.drupal-importio.dev -y dis overlay toolbar comment
-drush @drupal-importio.drupal-importio.dev -y pm-uninstall overlay toolbar comment
-drush @drupal-importio.drupal-importio.dev cc all
 ```
 
 New Magic
@@ -41,9 +36,7 @@ http://school-ratings.com/schoolRatings.php?zipOrCity=94606&schName=&lastOB=rank
 
 Export: Import.io Data Set
 
-d90b8e3d-957c-4757-bec8-98b22f64b11b
-
-https://import.io/data/set/?mode=loadSource&source=d90b8e3d-957c-4757-bec8-98b22f64b11b
+Copy the ID
 
 ---
 
