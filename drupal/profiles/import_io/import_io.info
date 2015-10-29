@@ -23,4 +23,5 @@ dependencies[] = path
 dependencies[] = school_ratings
 dependencies[] = strongarm
 dependencies[] = taxonomy
+dependencies[] = views
 dependencies[] = views_ui

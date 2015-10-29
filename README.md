@@ -20,7 +20,11 @@ Once all the requirements are fulfilled:
 vagrant up
 ```
 
-Login - http://drupal-importio.dev/user/login - username "admin", password "admin"
+* Login - http://drupal-importio.dev/user/login - username "admin", password "admin"
+* http://drupal-importio.dev/import
+    * Click "California School Ratings"
+    * Click Import
+* Upper-left hand corner - HOME > Flush All Caches
 
 Want to use the command-line?
 
@@ -28,6 +32,15 @@ Want to use the command-line?
 composer install
 ./vendor/bin/drush @drupal-importio.drupal-importio.dev status
 ```
+
+Want to be sure that everything is configured the way it was in the presentation?
+
+```bash
+./vendor/bin/drush @drupal-importio.drupal-importio.dev -y fra
+./vendor/bin/drush @drupal-importio.drupal-importio.dev cc all
+```
+
+![Keep Calm](img/clear-cache.png)
 
 ### import.io extraction
 
