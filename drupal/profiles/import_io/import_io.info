@@ -20,4 +20,3 @@ dependencies[] = feeds_tamper_ui
 dependencies[] = features
 dependencies[] = feedspreview
 dependencies[] = adminimal_admin_menu
-dependencies[] = school_ratings
