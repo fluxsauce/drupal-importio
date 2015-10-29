@@ -10,3 +10,4 @@ js/reveal.min.js
 log/*.log
 node_modules/
 tmp/**
+vendor

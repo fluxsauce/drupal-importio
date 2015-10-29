@@ -2,15 +2,6 @@
 
 By Jon Peck, jpeck@fluxsauce.com
 
-## Local presentation
-
-```bash
-npm install
-grunt serve
-```
-
-Visit http://localhost:8000 to view.
-
 ## Try it yourself!
 
 Clone this repository somewhere local.
@@ -19,7 +10,7 @@ I've included a [Drupal VM](http://www.drupalvm.com/) environment which, with li
 
 Then, edit `config.yml` and change your `local_path` to wherever you've cloned this repository:
 
-```
+```yml
 local_path: ~/projects/drupal_importio
 ```
 
@@ -28,6 +19,17 @@ Once all the requirements are fulfilled:
 ```bash
 vagrant up
 ```
+
+Login - http://drupal-importio.dev/user/login - username "admin", password "admin"
+
+Want to use the command-line?
+
+```bash
+composer install
+./vendor/bin/drush @drupal-importio.drupal-importio.dev status
+```
+
+## import.io extraction
 
 New Magic
 
@@ -65,7 +67,7 @@ Location
 Class Sizes
 Parent Education
 
-drush @drupal-importio.drupal-importio.dev field-create school district,text,text_textfield class_sizes,text_long,text_textarea parent_education,text_long,text_textarea state_rank,number_float,number api_score,number_float,number location,text_long,text_textarea
+drush @drupal-importio.drupal-importio.dev field-create school district,text,text_textfield class_sizes,text_long,text_textarea parent_education,number_float,number state_rank,number_float,number api_score,number_float,number location,text_long,text_textarea
 
 Location:
 
@@ -136,3 +138,27 @@ Click "California School Ratings"
 Click Import
 
 Go to Content
+
+---
+
+http://drupal-importio.dev/admin/structure/views/add
+
+View name: Schools
+
+Show: Content of type School
+
+[X] Create a page
+[X] Create a menu link, Main menu
+
+Display format: Table
+
+Add fields, filter criteria, save.
+
+## Local presentation
+
+```bash
+npm install
+grunt serve
+```
+
+Visit http://localhost:8000 to view.

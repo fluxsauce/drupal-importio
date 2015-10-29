@@ -1,0 +1,296 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "a63301a7a78318a751a895bd1b2068a7",
+    "content-hash": "abd519b7773097a7a27ff998b6928e20",
+    "packages": [
+        {
+            "name": "d11wtq/boris",
+            "version": "v1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/borisrepl/boris.git",
+                "reference": "31055b15e2d3fe47f31f6aa8e277f8f3fc7eb483"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/borisrepl/boris/zipball/31055b15e2d3fe47f31f6aa8e277f8f3fc7eb483",
+                "reference": "31055b15e2d3fe47f31f6aa8e277f8f3fc7eb483",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "ext-readline": "*",
+                "php": ">=5.3.0"
+            },
+            "bin": [
+                "bin/boris"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Boris": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A tiny, but robust REPL (Read-Evaluate-Print-Loop) for PHP.",
+            "time": "2015-03-01 08:05:19"
+        },
+        {
+            "name": "drush/drush",
+            "version": "7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drush-ops/drush.git",
+                "reference": "7e5e4b15e617ed77804d836a66229a70a67025c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/7e5e4b15e617ed77804d836a66229a70a67025c9",
+                "reference": "7e5e4b15e617ed77804d836a66229a70a67025c9",
+                "shasum": ""
+            },
+            "require": {
+                "d11wtq/boris": "~1.0",
+                "pear/console_table": "~1.2.0",
+                "php": ">=5.3.0",
+                "symfony/var-dumper": "^2.6.3",
+                "symfony/yaml": "~2.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.5",
+                "symfony/process": "2.4.5"
+            },
+            "bin": [
+                "drush",
+                "drush.php",
+                "drush.bat",
+                "drush.complete.sh"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Drush": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com"
+                },
+                {
+                    "name": "Owen Barton",
+                    "email": "drupal@owenbarton.com"
+                },
+                {
+                    "name": "Mark Sonnabaum",
+                    "email": "marksonnabaum@gmail.com"
+                },
+                {
+                    "name": "Antoine Beaupré",
+                    "email": "anarcat@koumbit.org"
+                },
+                {
+                    "name": "Greg Anderson",
+                    "email": "greg.1.anderson@greenknowe.org"
+                },
+                {
+                    "name": "Jonathan Araña Cruz",
+                    "email": "jonhattan@faita.net"
+                },
+                {
+                    "name": "Jonathan Hedstrom",
+                    "email": "jhedstrom@gmail.com"
+                },
+                {
+                    "name": "Christopher Gervais",
+                    "email": "chris@ergonlogic.com"
+                }
+            ],
+            "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
+            "homepage": "http://www.drush.org",
+            "time": "2015-10-23 12:48:00"
+        },
+        {
+            "name": "pear/console_table",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/Console_Table.git",
+                "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/Console_Table/zipball/10d89fbbe533351dcfe5dc1e84de25d9a8395950",
+                "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.3.10"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "time": "2014-10-27 10:04:49"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v2.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "eb033050050916b6bfa51be71009ef67b16046c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/eb033050050916b6bfa51be71009ef67b16046c9",
+                "reference": "eb033050050916b6bfa51be71009ef67b16046c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2015-10-25 17:17:38"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v2.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "eca9019c88fbe250164affd107bc8057771f3f4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca9019c88fbe250164affd107bc8057771f3f4d",
+                "reference": "eca9019c88fbe250164affd107bc8057771f3f4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-10-11 09:39:48"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
